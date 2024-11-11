@@ -1,0 +1,42 @@
+/* AppointmentForm.css */
+.modal-box {
+    position: relative;
+}
+
+.modal_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.modal-content {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-dialog {
+    max-width: 60% !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal_content {
+    flex: 1;
+    background: #fff;
+    padding: 0 20px;
+}
+
+.modal-img {
+    display: flex;
+}
+
+.modal-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.modal-box .modal-content {
+    /* Add custom styling for the modal if needed */
+}

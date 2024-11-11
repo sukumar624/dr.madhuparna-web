@@ -1,0 +1,113 @@
+.footer {
+    padding: 60px 0;
+    background: linear-gradient(to left, rgb(0 72 145 / 75%), rgb(0 72 145 / 68%)), url('../../assets/img/bannercontact-bg.webp') center no-repeat;
+    background-size: cover;
+}
+
+.footer_logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.footer_logo a img {
+    width: 10%;
+}
+
+.footer_logo a span {
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.footer_logo p {
+    color: var(--white);
+    max-width: 73%;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.footer_title h4 {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.quick_links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.quick_links ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 15px;
+}
+
+.reach_links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.reach_links ul li a {
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.reach_info>ul {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.reach_info>ul li a {
+    display: block;
+    font-size: 15px;
+}
+
+.reach_info>ul li {
+    position: relative;
+}
+
+.reach_info>ul li::after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
+
+.reach_info>ul li:last-child::after {
+    display: none;
+}
+
+
+.copyright {
+    padding: 10px 0;
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+.copyright p a {
+    margin-left: 5px;
+    color: var(--warning);
+    text-decoration: none;
+}
+
+.cta_info {
+    flex: 1;
+}

@@ -1,0 +1,87 @@
+.publication {
+    padding: 60px 0;
+    background: var(--bodyColor);
+}
+
+.publication_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.publication_item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+}
+
+
+.publication_item.active {
+    border: 2px solid #007bff;
+    /* Example border color to indicate active state */
+    background-color: #f0f8ff;
+    /* Example background color to indicate active state */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Smooth transition */
+}
+
+
+.publication_wrapper .publication_img {
+    height: 270px;
+}
+
+.publication_img img {
+    transition: all 1.8s;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.publication_item:hover .publication_img img {
+    transform: scale(1.5);
+    transition: all 1.8s;
+}
+
+.publication_info a {
+    text-decoration: none;
+    color: #fff;
+    background: var(--secondary);
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    transition: all .3s;
+}
+
+.publication_info a:hover {
+    background: var(--warning);
+}
+
+.publication_info a h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+
+
+#PublicationModal .modal-body {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 30px;
+}
+
+#PublicationModal .modal-body img {
+    height: auto;
+    object-fit: cover;
+    border: 10px solid var(--primary);
+}
+
+#PublicationModal .modal-title.h4 {
+    text-transform: capitalize;
+    color: var(--secondary);
+}

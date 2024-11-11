@@ -1,0 +1,343 @@
+/*----------------- Google Fonts CDN -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --dark: #122136;
+    --white: #ffffff;
+    --warning: #f97618;
+    --primary: #2e86de;
+    --secondary: #004891;
+    --bodyColor: #e7f1ff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: var(--bodyColor) !important;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 0 !important;
+    line-height: 1;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 0 !important;
+    line-height: 25px;
+}
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+
+.subheading h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.subheading h2 span {
+    color: var(--warning);
+}
+
+.line {
+    background: var(--dark);
+    width: 76px;
+    height: 3px;
+    border-radius: 10px;
+}
+
+.custom_btn {
+    padding: 15px 35px;
+    background: var(--secondary);
+    color: var(--white);
+    border-radius: 30px;
+    line-height: 1;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all .3s;
+    outline: none;
+    border: none;
+}
+
+.custom_btn:hover {
+    background: var(--warning);
+}
+
+
+/********************* About Page CSS *********************/
+.about_area {
+    padding: 60px 0;
+}
+
+.designation_area {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 50px;
+}
+
+.designation h4 {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.designation>span {
+    color: var(--warning);
+    font-weight: 400;
+}
+
+.about_info p {
+    margin-bottom: 10px !important;
+}
+
+.about_list {
+    padding: 60px 0;
+}
+
+.about_wraper {
+    display: grid;
+    gap: 20px;
+}
+
+.sub_title {
+    color: #004891;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 30px;
+    border-bottom: 1px solid;
+}
+
+.subicon {
+    background: #004d94;
+    width: 55px;
+    height: 55px;
+    color: #fff;
+    font-size: 30px;
+    display: grid;
+    place-content: center;
+}
+
+
+.about_wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+.about_cradential_item h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-bottom: 10px !important;
+    line-height: 1;
+    color: #ff3737;
+}
+
+.about_listing {
+    display: block;
+}
+
+.about_listing p {
+    margin-bottom: 0 !important;
+    font-weight: 700;
+}
+
+.about_info.pl-0 {
+    padding-left: 0;
+}
+
+#about_page .about_img::after {
+    transform: skew(0deg, 0deg);
+}
+
+/************************ Publication Page CSS ************************/
+.publicaton_area {
+    padding: 60px 0;
+}
+
+
+.publication_list ul {
+    display: grid;
+    gap: 20px;
+}
+
+.publication_list ul li {
+    padding: 20px;
+    background: var(--secondary);
+    color: #fff;
+}
+
+
+
+/************************* Contact Page CSS *************************/
+.getintouch {
+    padding-right: 100px;
+}
+
+.getintouch p {
+    margin-bottom: 30px !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cta_icon {
+    background: linear-gradient(45deg, #015398, #0c78b9);
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-content: center;
+    color: #ffff;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.cta_info h5 {
+    color: var(--secondary);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.cta_link>ul {
+    display: grid;
+    gap: 25px;
+}
+
+.cta_link>ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #787878;
+    font-weight: 400;
+}
+
+.cta_info a ul {
+    display: flex;
+    gap: 20px;
+}
+
+.phone_link li {
+    position: relative;
+}
+
+.phone_link li::after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+
+.phone_link li:last-child::after {
+    display: none;
+}
+
+/*********************** Gallery Page CSS ***********************/
+.my_gallery {
+    padding: 80px 0;
+}
+
+
+/*********************** Blog Page CSS ***********************/
+.blog_area {
+    padding: 80px 0;
+}
+
+.blog_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 20px;
+}
+
+.blog_item .card_img {
+    height: 250px;
+}
+
+.blog_item .card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog_item .card_info {
+    padding: 20px;
+}
+
+.blog_item .card_info h4 {
+    font-size: 22px;
+    color: var(--secondary);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+/************************** Floating Whatapp Button CSS **************************/
+.floating_btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+@keyframes pulsing {
+    to {
+        box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+    }
+}
+
+.contact_icon {
+    background-color: #42db87;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translatey(0px);
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 0 0 #42db87;
+    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    transition: all 300ms ease-in-out;
+}
+
+.contact_icon svg {}

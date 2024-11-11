@@ -1,0 +1,133 @@
+.header {
+    padding: 20px 0;
+    display: grid;
+    background: #e7f1ff;
+}
+
+.header {
+    padding: 20px 0;
+    display: grid;
+    background: #e7f1ff;
+}
+
+.header .navbar {
+    padding: 0;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+}
+
+
+.navbar-brand {
+    position: relative;
+    isolation: isolate;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo_area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand::after {
+    content: "";
+    background: var(--secondary);
+    width: 75%;
+    height: 225px;
+    position: absolute;
+    top: -90px;
+    z-index: -1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 83%);
+}
+
+.navbar-brand::before {
+    content: "";
+    width: 75%;
+    height: 348px;
+    background: var(--warning);
+    position: absolute;
+    left: 0px;
+    bottom: -122px;
+    z-index: 1;
+    clip-path: polygon(0 73%, 100% 84%, 100% 89%, 0 73%);
+}
+
+.logo_area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 60%;
+    position: relative;
+    top: 0;
+    left: 12px;
+}
+
+.navbar-brand img {
+    width: 25%;
+    object-fit: cover;
+}
+
+.designation h6 {
+    color: #FFEAD2;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.header .designation h6 {
+    color: #ffb300;
+}
+
+.navbar-brand span {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.header .navbar-nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.header .navbar-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all .3s;
+}
+
+.header .navbar-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--dark);
+    transition: all .3s;
+}
+
+.header .navbar-nav a:hover {
+    color: var(--warning);
+}
+
+.header .navbar-nav a.active {
+    color: var(--warning);
+}
+
+.header_appointment .custom_btn {
+    margin-top: 0;
+}

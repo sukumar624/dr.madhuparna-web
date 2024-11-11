@@ -1,0 +1,66 @@
+.chambers_section {
+    background: url('../../assets/img/chamber-bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.sheldue-item {
+    background: #1d3b8f;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    min-height: 221px;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.sheldue-item::before {
+    content: "";
+    background: rgb(255 255 255 / 3%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: -40px;
+    z-index: -1;
+}
+
+.chambers_section .row .col-sm-4:nth-child(even) .sheldue-item {
+    background: #1b2f68;
+}
+
+.sheldue-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: var(--bs-warning);
+}
+
+.sheldue-item p {
+    font-size: 12px;
+}
+
+.sheldue-item span {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+    color: #e1ff00;
+}
+
+.sheldue-item ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sheldue-item ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e7e7e72e;
+}

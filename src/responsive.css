@@ -1,0 +1,235 @@
+@media (max-width: 575.98px) {
+    .header_wrap {
+        flex-wrap: wrap;
+    }
+
+    .header_wrap {
+        gap: 20px;
+        display: grid;
+        background: aliceblue;
+        padding: 11px 15px 30px;
+        justify-content: flex-start;
+    }
+
+    .header .navbar-nav {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-left: 0 !important;
+    }
+
+    .navbar-brand::after {
+        display: none;
+    }
+
+    .navbar-brand::before {
+        display: none;
+    }
+
+    .logo_area {
+        display: grid;
+        gap: 10px;
+    }
+
+    .navbar-brand img {
+        width: 20%;
+        object-fit: cover;
+    }
+
+    .designation h6 {
+        color: var(--bs-black);
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+
+    .navbar-brand span {
+        color: var(--dark);
+        font-size: 14px;
+    }
+
+    .banner_wrap {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner_slider::after {
+        width: 100%;
+    }
+
+    .banner_slider::before {
+        display: none;
+    }
+
+    .banner_content {
+        max-width: 100%;
+    }
+
+    .banner_img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .banner_img::after {
+        display: none;
+    }
+
+    .banner_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0
+    }
+
+    .about_img::after {
+        transform: skew(-4deg, 0deg);
+    }
+
+    .about_info {
+        padding-left: 0;
+    }
+
+    .about_img {
+        margin-bottom: 30px;
+    }
+
+    .about_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .publication_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about_content p {
+        text-align: justify;
+    }
+
+    .header .designation h6 {
+        color: #1bab53;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .header_top_wrap {
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .footer .designation {
+        width: 59%;
+    }
+
+    .footer .designation h6 {
+        color: #CDDC39;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .footer_logo a img {
+        width: 16%;
+    }
+
+    .footer_logo p {
+        max-width: 100%;
+    }
+
+    .designation_area {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .modal_wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-dialog {
+        max-width: 100% !important;
+    }
+
+    .modal-img {
+        display: none;
+    }
+
+    .blog_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .breadcrumb_image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .reach_info>ul {
+        width: 100%;
+    }
+
+    .getintouch {
+        padding-right: 0;
+    }
+
+    .contact_area form {
+        padding: 30px 20px;
+        margin-top: 30px;
+    }
+
+    .modal_content {
+        padding: 0;
+    }
+
+    .cta_link>ul li a {
+        font-size: 12px;
+    }
+
+    .cta_info h5 {
+        font-size: 18px;
+    }
+
+    .about_wrapper {
+        margin-bottom: 15px;
+    }
+
+    #PublicationModal .modal-body {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #appointForm .modal_content {
+        flex: 1;
+        background: var(--secondary);
+        padding: 0;
+    }
+
+    #appointForm .modal-title.h4 {
+        color: #fff;
+    }
+
+    #appointForm .btn-close {
+        filter: invert(99%) sepia(0%) saturate(406%) hue-rotate(265deg) brightness(122%) contrast(100%);
+        opacity: 1;
+    }
+
+
+    .swiper-pagination {
+        position: initial;
+        display: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute;
+        top: var(--swiper-navigation-top-offset, 20%);
+    }
+
+    .banner_content h1 {
+        font-size: 28px;
+        margin-bottom: 10px !important;
+    }
+}
